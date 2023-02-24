@@ -1,30 +1,6 @@
-# upload-pages-artifact
+# pre-commit-action
 
-A composite Action for packaging and uploading artifact that can be deployed to [GitHub Pages][pages].
-
-# Scope
-
-⚠️ Official support for building Pages with Actions is in public beta at the moment.
-
-# Usage
-
-See [action.yml](action.yml)
-
-<!-- TODO: document custom workflow -->
-
-# Artifact validation
-
-While using this action is optional, we highly recommend it since it takes care of producing (mostly) valid artifacts.
-
-A Pages artifact must:
-
-- Be called `github-pages`
-- Be a single [`gzip` archive][gzip] containing a single [`tar` file][tar]
-
-The [`tar` file][tar] must:
-
-- be under 10GB in size
-- not contain any symbolic or hard links
+A composite Action for installing Rust, any extra packages you need, and runs pre-commit
 
 # Release instructions
 
